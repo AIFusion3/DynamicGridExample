@@ -1,0 +1,80 @@
+[
+    {
+        "field": "image",
+        "title": "",
+        "sortable": true,
+        "editable": true,
+        "displayType": "image",
+        "width": "50px",
+        "imageStyle": {
+            "width": "30px",
+            "height": "30px",
+            "borderRadius": "50%"
+        }
+    },
+    {
+        "field": "name",
+        "title": "Ürün Adı",
+        "sortable": true,
+        "editable": false,
+        "displayType": "link",
+        "url": "#{id}",
+        "target": "_blank",
+        "width": "30%",
+        "linkStyle": {
+            "color": "#000",
+            "textDecoration": "none"
+        }
+    },
+    {
+        "field": "price",
+        "title": "Fiyat",
+        "sortable": true,
+        "displayType": "money",
+        "width": "100px"
+    },
+    {
+        "field": "brand",
+        "title": "Marka",
+        "sortable": true
+    },
+    {
+        "field": "productInfo",
+        "title": "Ürün Bilgisi",
+        "format": "{brand} - {weight}"
+    },
+    {
+        "field": "status",
+        "title": "Durum",
+        "displayType": "chip",
+        "chipCondition": {
+            "trueLabel": "Aktif",
+            "falseLabel": "Pasif",
+            "trueColor": "green",
+            "falseColor": "red"
+        }
+    },
+    {
+        "field": "actions",
+        "title": "",
+        "width": "200px",
+        "actions": [
+            {
+                "label": "Düzenle",
+                "name": "edit",
+                "iconName": "edit",
+                "onClick": "edit",
+                "variant": "outline",
+                "icon":"Edit"
+            },
+            {
+                "label": "Sil",
+                "name": "delete",
+                "iconName": "trash",
+                "onClick": "delete",
+                "variant": "light",
+                "icon":"Trash"
+            }
+        ]
+    }
+]
