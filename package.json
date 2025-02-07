@@ -13,7 +13,7 @@
     "@mantine/core": "^7.16.2",
     "@mantine/form": "^7.16.2",
     "@mantine/hooks": "^7.16.2",
-    "dynamic-grid": "github:AIFusion3/DynamicGrid",
+    "dynamic-grid": "file:../dynamic-grid",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

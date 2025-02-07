@@ -39,6 +39,7 @@ export default function Home() {
         tokenRequired={false}
         pageSize={10}
         enableCheckbox={false}
+        isMenuAction={true}
         queryParams={queryParams}
         onRowSelected={(selectedRows) => {
           console.log('Seçilen satırlar:', selectedRows);

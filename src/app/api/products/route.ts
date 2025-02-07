@@ -4,9 +4,9 @@ import products from './products.json';
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const page = parseInt(searchParams.get('page') || '1');
-  const pageSize = parseInt(searchParams.get('pageSize') || '10');
-  const sortField = searchParams.get('sortField') || 'id';
-  const sortDirection = searchParams.get('sortDirection') || 'asc';
+  const pageSize = parseInt(searchParams.get('page_size') || '10');
+  const sortField = searchParams.get('sort_field') || 'id';
+  const sortDirection = searchParams.get('sort_direction') || 'asc';
 
   // Sıralama işlemi
   const sortedProducts = [...products].sort((a, b) => {
